@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/step-plan.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- //////////////////////container main//////////////// -->
+<div class="main">
+
+  <!-- /////////////////////container app///////////////// -->
+  <div class="app">
+
+  <!--/////////////////// container sidebar ///////////////-->
+    <div class="sidebar">
+      <nav class="sidebar-nav"> 
+        
+        <div class="sidebar-nav-step">
+          <button onclick="stepPersonal()" class="sidebar-btn" id="btn-1">1</button>
+          <p class="sidebar-nav-desc">
+            <span>Step 1</span><br>
+            Your info
+          </p>
+        </div>
+
+        <div class="sidebar-nav-step">
+          <button onclick="stepPlan()" class="sidebar-btn" id="sidebar-btn-2">2</button>
+          <p class="sidebar-nav-desc">
+            <span>Step 2</span><br>
+            Select plan
+          </p>
+        </div>
+        <div class="sidebar-nav-step">
+        <button onclick="stepAdd()" class="sidebar-btn" id="sidebar-btn-3">3</button>
+          <p class="sidebar-nav-desc">
+            <span>Step 3</span><br>
+            Add-ons
+          </p>
+
+        </div>
+        <div class="sidebar-nav-step">
+        <button onclick="stepFinish()" class="sidebar-btn" id="btn-4">4</button>
+          <p class="sidebar-nav-desc">
+            <span>Step 4</span><br>
+            Summary
+          </p>
+
+        </div>
+
+      </nav>
+    </div>
+    <!-- ///////////// container form  /////////////// -->
+    <div class="form">
+      
+      <!--/////////// section form plan /////////////////-->
+      
+      <section class="form-section form-plan" >
+        <h1 class="title-section">Select your plan</h1>
+        <p class="desc-section">You have the option of monthly or yearly billing.</p>
+
+        <div class="form-info-plan">
+            <div class="form-card-plan">
+              <div class="card-plan">
+                <img class="icon-card-plan" src="assets/images/icon-arcade.svg" alt="icon card plan arcade">
+                <div class="desc-card">
+                  <p class="info-card-plan">
+                    Arcade
+                  </p>
+                  <p id="desc-card-arcade-monthly" class="desc-card-plan">
+                    $9/mo
+                  </p>
+                  
+                </div>
+                
+              </div>
+
+              <div class="card-plan">
+                <img class="icon-card-plan" src="assets/images/icon-advanced.svg" alt="icon card plan arcade">
+                <div class="desc-card">
+                  <p class="info-card-plan">
+                    Advanced
+                  </p>
+                  <p id="desc-card-advanced-monthly" class="desc-card-plan">
+                    $12/mo
+                  </p>
+                  
+                </div>
+              </div>
+
+              <div class="card-plan">
+                <img class="icon-card-plan" src="assets/images/icon-pro.svg" alt="icon card plan arcade">
+                <div class="desc-card">
+                  <p class="info-card-plan">
+                    Pro
+                  </p>
+                  <p id="desc-card-pro-monthly" class="desc-card-plan">
+                    $15/mo
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="form-card-select">
+
+              <span onclick="cardM()" class="label-card-select">Monthly</span>
+
+              <div id="switch-plan" class="switch-card-select">
+                <span class="circle-switch-card-select"></span>
+              </div>
+
+              <span onclick="cardY()" class="label-card-select">Yearly</span>
+             
+            </div>
+        </div>
+      </section> 
+      
+      <!--///////////area buttons form plan///////////// -->
+      <div class="form-buttons">
+
+        <button class="form-btn-step-back"><a href="index.html">Go Back</a></button>
+
+        <button class="form-btn-step"><a href="step-add-ons.html">Next Step</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script type="text/javascript" src="step-plan.js"></script>
+  <script type="text/javascript" src="sidebar-steps.js"></script>
+</body>
+</html>

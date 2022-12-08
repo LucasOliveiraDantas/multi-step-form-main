@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/step-add-ons.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- //////////////////////container main//////////////// -->
+<div class="main">
+
+  <!-- /////////////////////container app///////////////// -->
+  <div class="app">
+
+  <!--/////////////////// container sidebar ///////////////-->
+    <div class="sidebar">
+      <nav class="sidebar-nav"> 
+        
+        <div class="sidebar-nav-step">
+          <button onclick="stepPersonal()" class="sidebar-btn" id="btn-1">1</button>
+          <p class="sidebar-nav-desc">
+            <span>Step 1</span><br>
+            Your info
+          </p>
+        </div>
+
+        <div class="sidebar-nav-step">
+          <button onclick="stepPlan()" class="sidebar-btn" id="btn-2">2</button>
+          <p class="sidebar-nav-desc">
+            <span>Step 2</span><br>
+            Select plan
+          </p>
+        </div>
+        <div class="sidebar-nav-step">
+        <button onclick="stepAdd()" class="sidebar-btn" id="sidebar-btn-3">3</button>
+          <p class="sidebar-nav-desc">
+            <span>Step 3</span><br>
+            Add-ons
+          </p>
+
+        </div>
+        <div class="sidebar-nav-step">
+        <button onclick="stepFinish()" class="sidebar-btn" id="btn-4">4</button>
+          <p class="sidebar-nav-desc">
+            <span>Step 4</span><br>
+            Summary
+          </p>
+
+        </div>
+
+      </nav>
+    </div>
+    <!-- ///////////// container form  /////////////// -->
+    <div class="form">
+      <!--/////////// section form add-ons /////////////////-->
+      <section class="form-section form-add-ons">
+
+        <h1 class="title-section">Pick add-ons</h1>
+        <p class="desc-section">Add-ons help enhance your gaming experience.</p>
+
+        <div class="form-item-complement" >
+
+          <div class="item-complement item-complement-1">
+            <div class="area-check-item-complement">
+              
+              <input id="check-item-complement-1" class="input-item-complement" type="checkbox" name="check">
+
+              <span class="check-item-complement">
+              </span>
+            </div>
+            
+            <div class="desc-item-complement">
+
+              <p class="info-item-complement">
+                Online service
+              </p>
+
+              <p class="desc-info-item-complement">
+                Access to multiplayer games
+              </p>
+
+            </div>
+            
+            <p class="desc-value-item-complement">+$1/mo</p>
+
+          </div>
+
+          <div class="item-complement item-complement-2">
+            <div class="area-check-item-complement">
+              
+              <input id="check-item-complement-2" class="input-item-complement" type="checkbox" name="check">
+
+              <span class="check-item-complement">
+              </span>
+            </div>
+            <div class="desc-item-complement">
+
+              <p class="info-item-complement">
+                Larger storage
+              </p>
+
+              <p class="desc-info-item-complement">
+                Extra 1TB of cloud save
+              </p>
+
+            </div>
+
+            <p class="desc-value-item-complement">+$2/mo</p>
+          </div>
+
+          <div class="item-complement item-complement-3">
+            <div class="area-check-item-complement">
+              
+              <input id="check-item-complement-3" class="input-item-complement" type="checkbox" name="check">
+
+              <span class="check-item-complement">
+              </span>
+            </div>
+            <div class="desc-item-complement">
+
+              <p class="info-item-complement">
+                Customizable Profile
+              </p>
+
+              <p class="desc-info-item-complement">
+                Custom theme on your profile
+              </p>
+
+            </div>
+
+            <p class="desc-value-item-complement">+$2/mo</p>
+          </div>
+
+        </div>
+      </section>
+      
+      <!--///////////area buttons form plan///////////// -->
+      <div class="form-buttons">
+        <button class="form-btn-step-back"><a href="step-plan.html">Go Back</a></button>
+
+        <button class="form-btn-step"><a href="step-finishing.html">Next Step</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script type="text/javascript" src="step-plan.js"></script>
+  <script type="text/javascript" src="sidebar-steps.js"></script>
+</body>
+</html>

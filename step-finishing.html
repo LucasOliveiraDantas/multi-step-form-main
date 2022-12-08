@@ -9,7 +9,7 @@
   <title>Frontend Mentor | Multi-step form</title>
 
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="css/step-personal.css">
+  <link rel="stylesheet" type="text/css" href="css/step-finishing.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -28,7 +28,7 @@
       <nav class="sidebar-nav"> 
         
         <div class="sidebar-nav-step">
-          <button onclick="stepPersonal()" class="sidebar-btn" id="sidebar-btn-1">1</button>
+          <button onclick="stepPersonal()" class="sidebar-btn" id="btn-1">1</button>
           <p class="sidebar-nav-desc">
             <span>Step 1</span><br>
             Your info
@@ -43,7 +43,7 @@
           </p>
         </div>
         <div class="sidebar-nav-step">
-        <button onclick="stepAdd()" class="sidebar-btn" id="sidebar-btn-3">3</button>
+        <button onclick="stepAdd()" class="sidebar-btn" id="btn-3">3</button>
           <p class="sidebar-nav-desc">
             <span>Step 3</span><br>
             Add-ons
@@ -63,33 +63,45 @@
     </div>
     <!-- ///////////// container form  /////////////// -->
     <div class="form">
-      <!--/////////// section form personal //////////////-->
-      <section class="form-section form-personal" >
-        <h1 class="title-section">Personal info</h1>
-        <p class="desc-section">Please provide your name, email address, and phone number.</p>
+      
+      <section class="form-section form-finishing">
 
-        <div class="form-info-personal">
-          <div class="form-area-personal">
-            <label class="label-form-area-personal">Name</label>
-            <input class="input-form-area-personal" type="text" name="name" placeholder="e.g. Stephen King">
+        <h1 class="title-section">Finishing up</h1>
+        <p class="desc-section">Double-check everything looks OK before confirming.</p>
+
+        <div class="area-info-form-finishing">
+          <div class="item-plan-finishing">
+            <div class="info-item-plan-finishing">
+              <p class="desc-item-plan-finishing">
+                Arcade (Monthly)
+              </p>
+              <a class="link-change-item-finishing" href="">Change</a>
+            </div>
+            
+            <p class="desc-value-item-finishing">$9/mo</p>
           </div>
 
-          <div class="form-area-personal">
-            <label class="label-form-area-personal">Email Address</label>
-            <input class="input-form-area-personal" type="text" name="name" placeholder="e.g. stephenking@lorem.com">
+          <div class="item-complement-finishing">
+            <div class="item-finishing">
+              <p class="desc-item-finishing">Online service</p>
+              <p class="value-item-finishing">+$1/mo</p>
+            </div>
+            <div class="item-finishing">
+              <p class="desc-item-finishing">Larger storage</p>
+              <p class="value-item-finishing">+$2/mo</p>
+            </div>
           </div>
+        </div>
 
-          <div class="form-area-personal">
-            <label class="label-form-area-personal">Phone Number</label>
-            <input class="input-form-area-personal" type="text" name="name" placeholder="e.g. +1 234 567 890">
-          </div>          
+        <div class="area-total-finishing">
+          <p class="desc-total-finishing">Total (per month)</p>
+          <p class="info-total-finishing">+$12/mo</p>
         </div>
       </section>
-      
       <!--///////////area buttons form plan///////////// -->
       <div class="form-buttons">
-        <button class="form-btn-step"><a href="step-plan.html">Next Step</a></button>
-
+        <button class="form-btn-step-back"><a href="step-add-ons.html">Go Back</a></button>
+        <button class="form-btn-step"><a href="">Next Step</a></button>
       </div>
     </div>
   </div>
