@@ -1,6 +1,4 @@
-@import  "css/step-personal.css";
 
-@import  "css/step-summary.css";
 
 @import "css/root.css";
 /*======= fonts ======= */
@@ -88,7 +86,15 @@ button{
 
 /*///////////////////////////////////////*/
 
-
+/*////////////////form add ons////////////////*/
+.input-item-complement:checked + .check-item-complement{
+	background-image: url('assets/images/icon-checkmark.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: hsl(243, 100%, 62%);
+	border: none;
+}
+	
 /*///////////////////////////// FORM BUTTONS /////////*/
 
 .form-buttons{

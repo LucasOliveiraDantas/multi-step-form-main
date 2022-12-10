@@ -73,6 +73,19 @@
 	font-weight: 500;
 	color: hsl(243, 100%, 62%);
 }
+
+/*============== form button ===========*/
+.form-btn-step{
+	width: 98px;
+	height: 42px;
+	background-color: hsl(243, 100%, 62%);
+	border: none;
+	border-radius: 0.3rem;
+	color: hsl(0, 0%, 100%);
+	font-weight: 700;
+}
+
+
 @media screen and (min-width: 1440px){
 	.area-info-form-finishing{
 		margin-top: 1rem;

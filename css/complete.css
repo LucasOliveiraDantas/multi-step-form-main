@@ -1,0 +1,47 @@
+
+.form-complete{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5rem 1.5rem 4.8rem 1.5rem;
+	row-gap: 1.5rem;
+}
+.icon-complete{
+	width: 55px;
+	height: 55px;
+}
+.title-complete{
+	color: hsl(213, 96%, 18%);
+}
+.desc-complete{
+	text-align: center;
+	color: hsl(231, 11%, 63%);
+	line-height: 1.55rem;
+	margin-top: -0.8rem;
+}
+@media screen and (min-width: 1440px){
+	.form{
+		padding: 3rem 4.5rem;
+	}
+	.form-complete{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 8rem 1.5rem 4.8rem 1.5rem;
+		row-gap: 1.5rem;
+	}
+	.icon-complete{
+		width: 80px;
+		height: 80px;
+	}
+	.title-complete{
+		color: hsl(213, 96%, 18%);
+		font-size: 34px;
+	}
+	.desc-complete{
+		text-align: center;
+		color: hsl(231, 11%, 63%);
+		line-height: 1.55rem;
+		margin-top: -0.8rem;
+	}
+}

@@ -14,7 +14,8 @@
 	border: 1px solid hsl(229, 24%, 87%);
 	border-radius: 0.5rem;
 	padding: 0.88rem 1rem;
-	width: 295px;
+	min-width: 258px;
+	max-width: 295px;
 	height: 62px;
 }
 .item-complement:hover{
@@ -40,13 +41,7 @@
 	opacity: 0;
 
 }
-.input-item-complement:checked + .check-item-complement{
-	background-image: url('assets/images/icon-checkmark.svg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: hsl(243, 100%, 62%);
-	border: none;
-}
+
 .desc-item-complement{
 	display: flex;
 	flex-direction: column;
@@ -69,7 +64,7 @@
 }
 @media screen and (min-width: 1440px) {
 	.item-complement{
-		width: 455px;
+		max-width: 455px;
 		height: 85px;
 		padding: 0rem 2rem;
 	}
